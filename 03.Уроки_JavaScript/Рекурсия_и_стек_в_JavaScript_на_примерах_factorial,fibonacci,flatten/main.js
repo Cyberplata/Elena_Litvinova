@@ -8,3 +8,11 @@
 // 3! = 1 * 2 * 3 = 6;
 // 4! = 1 * 2 * 3 * 4 = 24;
 
+function factorial(n) {
+   if(n === 0) {
+      return 1;
+   } else {
+      return n * factorial(n - 1); 
+   }
+}
+factorial(3)
