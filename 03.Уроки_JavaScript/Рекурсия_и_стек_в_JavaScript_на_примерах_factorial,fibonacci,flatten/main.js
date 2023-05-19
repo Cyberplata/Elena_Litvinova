@@ -1,5 +1,6 @@
 // Рекурсия и стек в JavaScript на примерах: factorial, fibonacci, flatten
 
+
 //1. factorial
 
 // 0! = 1
@@ -20,7 +21,35 @@ function factorial(n) {
 }
 console.log(factorial(4));
 
+function factorial(n) { // Краткая запись factorial
+   return (n <= 0) ? 1 :  n * factorial(n - 1);
+}
+
+
 
 //2. fibonacci
 
-// fibo
+// fibonacci(0) = 0;
+// fibonacci(1) = 1;
+// fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2);
+
+function fibonacci(n) {
+   if(n <= 1) {
+      return n;
+   } else {
+      return fibonacci(n - 1) + fibonacci(n - 2);
+   }
+}
+
+console.log(fibonacci(7));
+
+
+
+//3 flatten
+
+function flatten() {
+
+}
+
+console.log(flatten(1, [2, [[3]]], 4, 5, [6, [7]]));
+console.log(flatten);
